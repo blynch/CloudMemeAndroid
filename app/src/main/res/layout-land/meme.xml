@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="260dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/meme_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_camera_wide" />
+
+        <Button
+            android:id="@+id/meme_vote_button"
+            android:layout_marginTop="5dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/meme_image"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_action_good" />
+
+        <TextView
+            android:id="@+id/meme_score"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="@color/darkgrey"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/meme_image"
+            android:paddingTop="5dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@color/shadow" />
+
+</LinearLayout>

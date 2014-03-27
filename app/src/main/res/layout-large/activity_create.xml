@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightgrey"
+    android:orientation="vertical" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/template_grid_padding"
+        android:paddingLeft="@dimen/template_grid_padding"
+        android:paddingStart="@dimen/template_grid_padding"
+        android:paddingRight="@dimen/template_grid_padding"
+        android:paddingEnd="@dimen/template_grid_padding">
+        <TextView
+            android:id="@+id/top_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_section_top" />
+        <EditText
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_label"
+            android:maxLines="1"
+            android:inputType="textCapSentences"
+            android:imeOptions="flagNoExtractUi"/>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/template_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:columnWidth="@dimen/template_grid_column_width"
+        android:numColumns="auto_fit"
+        android:padding="@dimen/template_grid_padding"
+        android:clipToPadding="false"
+        android:verticalSpacing="@dimen/template_grid_padding"
+        android:horizontalSpacing="@dimen/template_grid_padding"
+        android:stretchMode="columnWidth"
+        android:choiceMode="singleChoice"
+        android:gravity="center"
+        android:visibility="gone">
+    </GridView>
+    <TextView
+        android:id="@+id/meme_template_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meme_template_empty"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+</LinearLayout>

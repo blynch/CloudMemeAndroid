@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cloud Meme</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create">Create a new meme</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="votes_placeholder">Votes</string>
+    <string name="created_placeholder">Created At</string>
+    <string name="creator_placeholder">Creator</string>
+    <string name="menu_new">New Meme</string>
+    <string name="button_pick">Pick Template</string>
+    <string name="text_section_top">Text</string>
+    <string name="meme_posted">Meme posted!</string>
+    <string name="button_create">Create</string>
+    <string name="auth_description">Choose an account to create a meme with.</string>
+    <string name="menu_create">Create</string>
+    <string name="blank_list">Fetching memes…</string>
+    <string name="meme_template_empty">Loading templates…</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meme_template_number">swipe to choose template</string>
+    <string name="meme_vote">Voted!</string>
+
+</resources>

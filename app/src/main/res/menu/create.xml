@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.google.devrel.samples.memedroid.app.CreateActivity" >
+    <item android:id="@+id/menu_create"
+          android:visible="true"
+          android:icon="@drawable/ic_action_accept"
+          android:title="@string/menu_create"
+          android:showAsAction="ifRoom" />
+</menu>
