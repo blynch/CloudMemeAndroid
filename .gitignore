@@ -5,9 +5,9 @@ local.properties
 .idea/tasks.xml
 .idea/libraries/
 /app/build/
+/app/gen/
 *.class
 
 # Package Files #
-*.jar
 *.war
 *.ear
